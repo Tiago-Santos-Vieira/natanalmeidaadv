@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="Natan Almeida Advocacia: atuação em Direito Previdenciário em Nanuque/MG e atendimento online. Conheça as áreas de atuação, o escritório e nossa equipe.">
+  <title>Natan Almeida Advocacia | Direito Previdenciário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="head.jpg">
+  <style>
+    :root { --ink:#090a0c; --ink-soft:#17181b; --paper:#090a0c; --paper-deep:#17181b; --white:#fff; --body:#bfc0c3; --muted:#a9a9aa; --gold:#ad873b; --gold-light:#d4b566; --line:#37383b; --max:1180px; }
+    *,*::before,*::after { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:82px; }
+    body { margin:0; background:var(--paper); color:var(--white); font-family:"DM Sans",Arial,sans-serif; line-height:1.65; -webkit-font-smoothing:antialiased; }
+    img { display:block; max-width:100%; }
+    a { color:inherit; }
+    button,input,select,textarea { font:inherit; }
+    button { cursor:pointer; }
+    :focus-visible { outline:2px solid var(--gold); outline-offset:4px; }
+    ::selection { background:#d9c8a5; color:var(--ink); }
+    h1,h2,h3,p { margin-top:0; }
+    h1,h2,h3 { font-family:"Manrope",Arial,sans-serif; font-weight:600; letter-spacing:-.04em; line-height:1.22; }
+    h2 { font-size:clamp(2rem,3vw,3rem); }
+    .wrap { width:min(var(--max),calc(100% - 48px)); margin-inline:auto; }
+    .eyebrow { display:inline-flex; align-items:center; gap:12px; margin:0 0 16px; color:var(--gold-light); font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
+    .eyebrow::before { content:""; width:26px; height:1px; background:currentColor; }
+    .eyebrow.light { color:var(--gold-light); }
+    .section-intro { max-width:740px; margin-bottom:30px; }
+    .section-intro h2 { margin-bottom:12px; }
+    .section-intro > p:last-child { color:var(--body); font-size:1rem; }
+    .button { min-height:52px; padding:13px 23px; display:inline-flex; align-items:center; justify-content:center; gap:24px; border:1px solid transparent; border-radius:3px; text-decoration:none; font-size:.84rem; font-weight:700; transition:background .2s,border-color .2s,transform .2s; }
+    .button:hover { transform:translateY(-2px); }
+    .button-gold { color:var(--ink); background:var(--gold-light); }
+    .button-gold:hover { background:#e0c574; }
+    .hero .button-gold { font-size:1.05rem; padding:18px 36px; min-height:60px; animation:hero-pulse 2s infinite; }
+    .hero .button-gold:hover { animation:none; transform:translateY(-2px); }
+    @keyframes hero-pulse { 0%,100% { box-shadow:0 0 0 0 rgba(212,181,102,.6); filter:brightness(1); transform:scale(1); } 50% { box-shadow:0 0 0 12px rgba(212,181,102,0); filter:brightness(1.15); transform:scale(1.02); } }
+    .text-link { display:inline-flex; align-items:center; gap:15px; padding-bottom:5px; border-bottom:1px solid var(--gold); text-decoration:none; font-weight:700; font-size:.88rem; }
+    .text-link:hover { color:#9b7942; }
+
+    /* Navigation */
+    .site-header { position:sticky; top:0; z-index:30; background:rgba(9,10,12,.97); border-bottom:1px solid #ffffff1c; }
+    .header-inner { min-height:80px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { display:inline-flex; align-items:center; flex:none; }
+    .brand img { width:174px; height:55px; object-fit:contain; object-position:left center; }
+    .site-nav { display:flex; align-items:center; gap:32px; }
+    .site-nav a { color:#e5e5e5; text-decoration:none; font-size:.78rem; font-weight:600; transition:color .2s; }
+    .site-nav a:hover,.site-nav a:focus-visible { color:var(--gold-light); }
+    .header-contact { display:inline-flex; align-items:center; justify-content:center; gap:9px; min-height:42px; color:var(--ink); background:var(--gold-light); border:1px solid #e5c475; border-radius:3px; padding:9px 16px; text-decoration:none; font-size:.78rem; font-weight:700; white-space:nowrap; animation:whatsapp-pulse 2.4s ease-in-out infinite; transition:background .2s; }
+    .header-contact:hover { background:#efd484; }
+    .header-contact svg { width:18px; height:18px; flex:none; }
+    .header-contact .label-short { display:none; }
+    @keyframes whatsapp-pulse { 0%,100% { box-shadow:0 0 0 0 rgba(212,181,102,.43); filter:brightness(1); } 50% { box-shadow:0 0 0 7px rgba(212,181,102,0); filter:brightness(1.2); } }
+    .menu-toggle { display:none; width:44px; height:44px; align-items:center; justify-content:center; border:1px solid #ffffff45; background:transparent; color:white; font-size:1.45rem; line-height:1; }
+
+    /* Hero: replace the portrait source with the final banner when ready. */
+    .hero { position:relative; overflow:hidden; color:var(--white); background:#090a0c url('head.jpg') center 43% / cover no-repeat; }
+    .hero::before { content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(90deg,rgba(9,10,12,.96) 0%,rgba(9,10,12,.84) 33%,rgba(9,10,12,.34) 65%,rgba(9,10,12,.04) 100%); }
+    .hero-inner { min-height:555px; display:flex; align-items:center; padding-block:55px; }
+    .hero-copy { position:relative; z-index:2; max-width:620px; animation:arrive .7s ease both; }
+    .hero .eyebrow { margin-bottom:22px; }
+    .hero h1 { max-width:590px; font-size:clamp(2.75rem,4vw,4.45rem); margin-bottom:23px; }
+    .hero h1 em { color:var(--gold-light); font-style:normal; font-weight:600; }
+    .hero-description { max-width:510px; color:#d5d5d4; font-size:1rem; line-height:1.75; margin-bottom:27px; }
+    .hero-actions { display:flex; gap:12px; flex-wrap:wrap; }
+    .hero-note { display:flex; gap:11px; align-items:center; margin:29px 0 0; color:#bebebe; font-size:.78rem; letter-spacing:.04em; }
+    .hero-note span { width:24px; height:1px; background:var(--gold); }
+    @keyframes arrive { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+
+    .services { padding:76px 0 80px; background:var(--ink-soft); }
+    .service-heading { display:flex; justify-content:space-between; align-items:end; gap:32px; margin-bottom:26px; }
+    .service-heading .section-intro { margin-bottom:0; }
+    .services-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); }
+    .service-card { min-height:156px; padding:25px; background:#202124; transition:background .2s; }
+    .service-card:hover { background:#28292c; }
+    .service-number { display:block; margin-bottom:14px; font-size:.72rem; font-weight:700; letter-spacing:.1em; color:var(--gold-light); }
+    .service-card h3 { font-size:1.24rem; margin-bottom:8px; }
+    .service-card p { color:var(--body); font-size:.87rem; line-height:1.55; margin-bottom:0; }
+
+    .about { padding:72px 0; background:var(--ink-soft); }
+    .about-grid { display:grid; grid-template-columns:210px .8fr 1.2fr; gap:36px; align-items:center; }
+    .about-portrait { margin:0; }
+    .about-portrait img { width:210px; height:265px; object-fit:cover; object-position:center 18%; border:1px solid #b5995a76; }
+    .about h2 { margin-bottom:19px; }
+    .about-lead { font-family:"DM Sans",Arial,sans-serif; font-size:1.1rem; line-height:1.55; color:var(--body); }
+    .about-body { padding-top:0; color:var(--body); font-size:.94rem; line-height:1.7; }
+    .about-body p { margin-bottom:16px; }
+    .credential { margin:0 0 20px; font-size:.76rem; font-weight:700; color:var(--gold-light); letter-spacing:.12em; }
+    .about-body .text-link { margin-top:8px; }
+
+    .people-place { padding:76px 0 82px; color:var(--white); background:var(--ink); }
+    .people-place-intro { display:flex; justify-content:space-between; align-items:end; gap:25px; margin-bottom:24px; }
+    .people-place-intro h2 { margin-bottom:0; }
+    .people-place-intro > p { max-width:380px; margin:0; color:#c5c5c5; font-size:.92rem; line-height:1.6; }
+    .photo-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .photo-panel { position:relative; height:410px; margin:0; overflow:hidden; isolation:isolate; background:#1d1d1f; }
+    .gallery-shot { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .8s ease; }
+    .gallery-shot.is-active { opacity:1; }
+    .photo-panel[data-gallery="equipe"] .gallery-shot { object-position:center 38%; }
+    .photo-panel::after { content:""; position:absolute; inset:50% 0 0; pointer-events:none; background:linear-gradient(transparent,#000b); z-index:1; }
+    .photo-panel figcaption { position:absolute; z-index:2; bottom:0; left:0; right:0; display:flex; justify-content:space-between; align-items:end; gap:12px; padding:20px 22px; }
+    .photo-caption { display:grid; gap:3px; }
+    .photo-caption strong { font:600 1.1rem/1.3 "Manrope",Arial,sans-serif; }
+    .photo-caption small { color:#e7e7e6; font-size:.73rem; }
+    .gallery-controls { display:flex; gap:7px; flex:none; }
+    .gallery-controls button { width:36px; height:36px; border:1px solid #ffffffaa; background:#090a0c55; color:white; font-size:1.14rem; line-height:1; transition:background .2s,border-color .2s; }
+    .gallery-controls button:hover { background:#090a0ccc; border-color:var(--gold-light); }
+
+    .film { padding:78px 0; background:var(--ink); border-block:1px solid var(--line); }
+    .film-grid { display:grid; grid-template-columns:.75fr 1.25fr; gap:8%; align-items:center; }
+    .film h2 { margin-bottom:18px; }
+    .film p:not(.eyebrow) { color:var(--body); }
+    .video-shell { position:relative; aspect-ratio:16/9; background:#141414; overflow:hidden; }
+    .video-shell iframe { width:100%; height:100%; border:0; }
+    .video-trigger { display:grid; place-items:center; width:100%; height:100%; padding:0; border:0; color:#fff; background:linear-gradient(#090a0c26,#090a0c80),url('https://img.youtube.com/vi/o-iS-7rv6uM/hqdefault.jpg') center / cover no-repeat; }
+    .play-icon { display:grid; place-items:center; width:72px; height:72px; border-radius:50%; background:var(--gold-light); color:var(--ink); font-size:1.5rem; padding-left:4px; transition:transform .2s; }
+    .video-trigger:hover .play-icon { transform:scale(1.08); }
+    .video-label { position:absolute; bottom:18px; left:20px; color:white; font-size:.76rem; font-weight:700; }
+
+    .difference { padding:75px 0; background:var(--ink-soft); }
+    .difference-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+    .difference-item { padding-top:18px; border-top:1px solid var(--line); }
+    .difference-item span { display:block; margin-bottom:14px; color:var(--gold-light); font-size:.75rem; font-weight:700; }
+    .difference-item h3 { font-size:1.22rem; margin-bottom:8px; }
+    .difference-item p { color:var(--body); font-size:.91rem; }
+
+    .visit { padding:78px 0; background:var(--ink); }
+    .visit-grid { display:grid; grid-template-columns:.7fr 1.3fr; gap:7%; align-items:center; }
+    .visit h2 { margin-bottom:20px; }
+    .visit p { color:var(--body); }
+    .address { margin-top:28px; font-weight:700; color:var(--white)!important; }
+    .map-frame { min-height:340px; background:#deded7; border:1px solid var(--line); }
+    .map-frame iframe { display:block; width:100%; height:340px; border:0; filter:grayscale(.65); }
+
+    .contact { padding:78px 0 34px; color:var(--white); background:var(--ink-soft); }
+    .contact-grid { display:grid; grid-template-columns:.85fr 1.15fr; gap:10%; }
+    .contact h2 { margin-bottom:19px; }
+    .contact-copy > p:not(.eyebrow) { color:#c9c9c9; max-width:400px; }
+    .contact-links { display:flex; flex-direction:column; align-items:flex-start; gap:15px; margin-top:33px; overflow-wrap:anywhere; }
+    .contact-links a { text-decoration:none; border-bottom:1px solid #a98e62; font-size:.91rem; }
+    .contact-links a:hover { color:var(--gold-light); }
+    .contact-form { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .field { display:flex; flex-direction:column; gap:8px; }
+    .field-wide { grid-column:1/-1; }
+    .field label { color:#dedfd9; font-size:.79rem; font-weight:600; }
+    .field input,.field select,.field textarea { width:100%; border:1px solid #646466; border-radius:2px; background:#1b1b1e; color:var(--white); padding:13px 14px; outline:none; }
+    .field input:focus,.field select:focus,.field textarea:focus { border-color:var(--gold-light); }
+    .field textarea { min-height:108px; resize:vertical; }
+    .contact-form button { justify-self:start; }
+    .form-help { margin:0; align-self:center; color:#bcbcbc; font-size:.74rem; }
+    .footer-bar { display:flex; justify-content:space-between; gap:20px; border-top:1px solid #ffffff25; padding-top:25px; margin-top:88px; color:#aeb6ae; font-size:.74rem; }
+    .footer-bar p { margin:0; }
+    .footer-bar a { text-decoration:none; }
+
+    @media(max-width:950px) {
+      .site-nav { gap:16px; }
+      .hero-inner { min-height:530px; }
+      .hero h1 { font-size:clamp(2.7rem,4.7vw,4rem); }
+    }
+    @media(max-width:900px) {
+      html { scroll-padding-top:72px; }
+      .wrap { width:min(var(--max),calc(100% - 36px)); }
+      .header-inner { min-height:70px; }
+      .brand img { width:148px; height:50px; }
+      .menu-toggle { display:flex; }
+      .header-contact { margin-left:auto; padding:8px 12px; }
+      .site-nav { display:none; position:absolute; top:70px; left:0; right:0; flex-direction:column; align-items:stretch; gap:0; padding:12px 18px 20px; background:var(--ink); border-bottom:1px solid #ffffff29; }
+      .site-nav.open { display:flex; }
+      .site-nav a { padding:12px 6px; font-size:.9rem; }
+      .hero { background-position:66% center; }
+      .hero::before { background:linear-gradient(90deg,rgba(9,10,12,.95) 0%,rgba(9,10,12,.82) 54%,rgba(9,10,12,.35) 100%); }
+      .hero-inner { min-height:510px; padding-block:55px; }
+      .hero h1 { font-size:clamp(2.55rem,8.5vw,3.7rem); }
+      .hero-description { font-size:1rem; }
+      .services,.about,.people-place,.film,.difference,.visit { padding-block:64px; }
+      .service-heading { display:block; }
+      .service-heading .text-link { margin-top:15px; }
+      .services-grid { grid-template-columns:repeat(2,1fr); }
+      .about-grid { grid-template-columns:175px 1fr; gap:24px; }
+      .about-portrait img { width:175px; height:220px; }
+      .about-body { grid-column:1/-1; }
+      .film-grid,.visit-grid,.contact-grid { grid-template-columns:1fr; gap:30px; }
+      .about-body { padding-top:0; }
+      .people-place-intro { display:block; }
+      .people-place-intro > p { margin-top:12px; }
+      .photo-grid { grid-template-columns:1fr; }
+      .photo-panel { height:340px; }
+      .film-grid { gap:22px; }
+      .difference-grid { grid-template-columns:1fr; gap:14px; }
+      .contact { padding-top:75px; }
+      .contact-grid { gap:42px; }
+      .footer-bar { margin-top:70px; }
+    }
+    @media(max-width:520px) {
+      .header-inner { gap:8px; }
+      .brand img { width:104px; height:45px; }
+      .header-contact { padding:8px 10px; font-size:.73rem; gap:6px; }
+      .header-contact .label-full { display:none; }
+      .header-contact .label-short { display:inline; }
+      .menu-toggle { width:40px; height:40px; flex:none; }
+      .hero-actions { flex-direction:column; align-items:stretch; }
+      .hero { background-position:70% center; }
+      .hero::before { background:linear-gradient(90deg,rgba(9,10,12,.96) 0%,rgba(9,10,12,.84) 60%,rgba(9,10,12,.52) 100%); }
+      .hero-inner { min-height:560px; }
+      .about-grid { grid-template-columns:125px 1fr; gap:18px; align-items:center; }
+      .about-portrait img { width:125px; height:170px; }
+      .about-lead { font-size:.95rem; }
+      .services-grid,.photo-grid { grid-template-columns:1fr; }
+      .photo-panel { height:290px; }
+      .service-card { min-height:0; padding:24px; }
+      .service-number { margin-bottom:14px; }
+      .contact-form { grid-template-columns:1fr; }
+      .field-wide { grid-column:auto; }
+      .form-help { align-self:start; }
+      .footer-bar { flex-direction:column; }
+      .section-intro { margin-bottom:30px; }
+    }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; } }
+  </style>
+  <!-- Meta Pixel preserved from the original page. -->
+  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','673260972512492');fbq('track','PageView');</script>
+</head>
+<body>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=673260972512492&amp;ev=PageView&amp;noscript=1" alt=""></noscript>
+  <header class="site-header" id="header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="Natan Almeida Advocacia — início"><img src="https://i.postimg.cc/L8ys9rTH/logo.png" alt="Natan Almeida Advocacia" width="174" height="55"></a>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a><a href="#atuacao">Áreas de atuação</a><a href="#natan">Dr. Natan</a><a href="#equipe">Equipe e escritório</a><a href="#contato">Contato</a>
+      </nav>
+      <a class="header-contact" href="https://wa.me/5533998572823" target="_blank" rel="noopener noreferrer" aria-label="Falar com a equipe pelo WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="M8.4 8.1c-.4.2-.9.9-.9 1.5 0 1.5 2.8 4.9 5.7 5.8.7.2 1.5-.1 2-.6l.6-.8-2.1-1-.8.8c-1.5-.6-2.5-1.6-3.1-3.1l.7-.7-1.1-2Z"/></svg><span class="label-full">Falar no WhatsApp</span><span class="label-short">WhatsApp</span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="site-nav" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow light">Natan Almeida Advocacia · Nanuque/MG</p>
+          <h1 id="hero-title">Seu direito merece <em>atenção em cada etapa.</em></h1>
+          <p class="hero-description">Atuação em Direito Previdenciário com orientação clara e acompanhamento próximo em questões relacionadas a benefícios e aposentadorias.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="https://wa.me/5533998572823" target="_blank" rel="noopener noreferrer">Conversar com a equipe <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note"><span aria-hidden="true"></span>Atendimento presencial e online</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="atuacao" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="service-heading">
+          <div class="section-intro"><p class="eyebrow">Áreas de atuação</p><h2 id="services-title">Orientação para momentos que pedem clareza.</h2><p>Conheça os assuntos previdenciários em que a equipe atua.</p></div>
+          <a class="text-link" href="#contato">Entre em contato <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="services-grid">
+          <article class="service-card"><span class="service-number">01 / PREVIDENCIÁRIO</span><h3>BPC/LOAS</h3><p>Orientação sobre o benefício assistencial e seus requisitos.</p></article>
+          <article class="service-card"><span class="service-number">02 / PREVIDENCIÁRIO</span><h3>Aposentadorias</h3><p>Análise de aposentadoria urbana e rural conforme cada trajetória.</p></article>
+          <article class="service-card"><span class="service-number">03 / PREVIDENCIÁRIO</span><h3>Demandas contra o INSS</h3><p>Acompanhamento de pedidos e questões envolvendo o INSS.</p></article>
+          <article class="service-card"><span class="service-number">04 / PREVIDENCIÁRIO</span><h3>Auxílios</h3><p>Questões relacionadas a auxílio por incapacidade e acidente.</p></article>
+          <article class="service-card"><span class="service-number">05 / PREVIDENCIÁRIO</span><h3>Salário-maternidade</h3><p>Esclarecimento de dúvidas sobre o benefício e seus critérios.</p></article>
+          <article class="service-card"><span class="service-number">06 / PREVIDENCIÁRIO</span><h3>Pensão por morte</h3><p>Orientação a familiares sobre análise e solicitação do benefício.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="film" aria-labelledby="film-title">
+      <div class="wrap film-grid"><div><p class="eyebrow">Apresentação institucional</p><h2 id="film-title">Conheça o escritório em vídeo.</h2><p>Uma breve apresentação da nossa atuação e da equipe.</p></div><div class="video-shell" id="video-shell"><button class="video-trigger" type="button" aria-label="Reproduzir vídeo institucional no YouTube"><span class="play-icon" aria-hidden="true">▶</span><span class="video-label">Assistir à apresentação · YouTube</span></button></div></div>
+    </section>
+
+    <section class="about" id="natan" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <figure class="about-portrait"><img src="https://lh3.googleusercontent.com/p/AF1QipPACM1E0gdjPx76nKEB3g-ipkmLit9dOE4MXZFG=w900-h1200-n-k-no-nu" alt="Retrato do Dr. Natan Almeida" width="900" height="1200" loading="lazy" decoding="async"></figure>
+        <div><p class="eyebrow">À frente do escritório</p><h2 id="about-title">Dr. Natan Almeida</h2><p class="about-lead">A orientação começa com escuta, análise cuidadosa e uma conversa que você possa compreender.</p></div>
+        <div class="about-body"><p class="credential">SÓCIO FUNDADOR · OAB/MG 151.634</p><p>Com atuação voltada ao Direito Previdenciário, o Dr. Natan Almeida conduz a estratégia jurídica do escritório e acompanha o trabalho desenvolvido pela equipe.</p><p>Cada história envolve necessidades e dúvidas próprias. Por isso, o atendimento busca explicar os caminhos possíveis, os documentos necessários e as etapas de cada demanda com linguagem objetiva.</p><a class="text-link" href="https://wa.me/5533998572823" target="_blank" rel="noopener noreferrer">Falar com a equipe <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="people-place" id="equipe" aria-labelledby="people-title">
+      <div class="wrap">
+        <p class="eyebrow light">Por dentro do escritório</p>
+        <div class="people-place-intro"><h2 id="people-title">Nossa equipe e nosso espaço</h2><p>Conheça as pessoas e os ambientes do escritório em Nanuque.</p></div>
+        <div class="photo-grid">
+          <figure class="photo-panel" data-gallery="equipe">
+            <img class="gallery-shot is-active" src="https://i.postimg.cc/XvxNqvVS/equipe1.jpg" alt="Equipe Natan Almeida Advocacia" width="1200" height="800" loading="lazy" decoding="async">
+            <img class="gallery-shot" alt="" width="1200" height="800" aria-hidden="true">
+            <figcaption><span class="photo-caption"><strong>Nossa equipe</strong><small>Profissionais do escritório</small></span><span class="gallery-controls"><button type="button" data-direction="-1" aria-label="Foto anterior da equipe">←</button><button type="button" data-direction="1" aria-label="Próxima foto da equipe">→</button></span></figcaption>
+          </figure>
+          <figure class="photo-panel" data-gallery="espaco">
+            <img class="gallery-shot is-active" src="https://i.postimg.cc/7LfZfmsH/recepcao1.jpg" alt="Recepção do escritório" width="900" height="650" loading="lazy" decoding="async">
+            <img class="gallery-shot" alt="" width="900" height="650" aria-hidden="true">
+            <figcaption><span class="photo-caption"><strong class="gallery-title">Recepção</strong><small>Nosso espaço em Nanuque</small></span><span class="gallery-controls"><button type="button" data-direction="-1" aria-label="Foto anterior do escritório">←</button><button type="button" data-direction="1" aria-label="Próxima foto do escritório">→</button></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="difference" aria-labelledby="difference-title">
+      <div class="wrap"><div class="section-intro"><p class="eyebrow">Nosso atendimento</p><h2 id="difference-title">Acompanhamento com informação e proximidade.</h2></div><div class="difference-grid">
+        <div class="difference-item"><span>01</span><h3>Análise individual</h3><p>Cada demanda começa pela compreensão dos documentos e da situação apresentada.</p></div>
+        <div class="difference-item"><span>02</span><h3>Conversa clara</h3><p>Explicamos as etapas e os caminhos possíveis sem complicar o que pode ser dito com simplicidade.</p></div>
+        <div class="difference-item"><span>03</span><h3>Contato próximo</h3><p>Atendimento presencial em Nanuque e comunicação pelo WhatsApp ao longo do acompanhamento.</p></div>
+      </div></div>
+    </section>
+
+    <section class="visit" aria-labelledby="visit-title"><div class="wrap visit-grid"><div><p class="eyebrow">Onde estamos</p><h2 id="visit-title">Visite-nos em Nanuque.</h2><p>Entre em contato para conversar sobre sua situação ou conhecer o escritório.</p><p class="address">Rua Juiz de Fora, 241 · Centro<br>Nanuque/MG · CEP 39.860-000</p></div><div class="map-frame"><iframe title="Mapa da localização do escritório em Nanuque" src="https://maps.google.com/maps?q=Rua%20Ju%C3%ADz%20de%20Fora%20241%20-%20Centro%2C%20Nanuque%2FMG&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></section>
+  </main>
+
+  <footer class="contact" id="contato"><div class="wrap"><div class="contact-grid"><div class="contact-copy"><p class="eyebrow light">Contato</p><h2>Vamos conversar?</h2><p>Escolha o canal mais conveniente para entrar em contato com o escritório.</p><div class="contact-links"><a href="tel:+5533998572823">(33) 99857-2823</a><a href="mailto:natanalmeidaadvogado@gmail.com">natanalmeidaadvogado@gmail.com</a><a href="https://instagram.com/natanalmeidaadvogados" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://wa.me/5533998572823" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></div>
+    <form class="contact-form" id="contact-form"><div class="field"><label for="name">Seu nome</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Como podemos chamar você?" required></div><div class="field"><label for="interest">Assunto</label><select id="interest" name="interest" required><option value="">Selecione uma opção</option><option>BPC/LOAS</option><option>Aposentadoria urbana/rural</option><option>Demandas contra o INSS</option><option>Auxílio por incapacidade/acidente</option><option>Salário-maternidade</option><option>Pensão por morte</option><option>Outro assunto</option></select></div><div class="field field-wide"><label for="message">Mensagem</label><textarea id="message" name="message" placeholder="Conte brevemente o que você gostaria de conversar" required></textarea></div><button type="submit" class="button button-gold">Abrir conversa no WhatsApp <span aria-hidden="true">↗</span></button><p class="form-help">A mensagem será aberta no WhatsApp para você conferir e enviar.</p></form>
+  </div><div class="footer-bar"><p>© <span id="year">2026</span> Natan Almeida Advocacia · OAB/MG 151.634</p><a href="#inicio">Voltar ao início ↑</a></div></div></footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.site-nav');
+    menuButton.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+      menuButton.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+      menuButton.textContent = open ? '×' : '☰';
+    });
+    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      menu.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); menuButton.setAttribute('aria-label', 'Abrir menu'); menuButton.textContent = '☰';
+    }));
+    const galleries = {
+      equipe: [
+        { src:'https://i.postimg.cc/XvxNqvVS/equipe1.jpg', alt:'Equipe Natan Almeida Advocacia', title:'Nossa equipe' },
+        { src:'https://i.postimg.cc/sgn2jtc1/equipe2.jpg', alt:'Profissionais do escritório Natan Almeida Advocacia', title:'Nossa equipe' }
+      ],
+      espaco: [
+        { src:'https://i.postimg.cc/7LfZfmsH/recepcao1.jpg', alt:'Recepção do escritório', title:'Recepção' },
+        { src:'https://i.postimg.cc/TPp3pC7h/recepcao2.jpg', alt:'Outro ângulo da recepção', title:'Recepção' },
+        { src:'https://i.postimg.cc/GpHmHq74/reuniao1.jpg', alt:'Sala de reuniões do escritório', title:'Sala de reuniões' },
+        { src:'https://i.postimg.cc/3wdxdnSy/reuniao2.jpg', alt:'Outro ângulo da sala de reuniões', title:'Sala de reuniões' }
+      ]
+    };
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    document.querySelectorAll('.photo-panel[data-gallery]').forEach(panel => {
+      const items = galleries[panel.dataset.gallery];
+      const shots = [...panel.querySelectorAll('.gallery-shot')];
+      const title = panel.querySelector('.gallery-title');
+      let index = 0, active = 0, timer, inView = false, changing = false;
+      const schedule = () => {
+        clearTimeout(timer);
+        if (inView && !document.hidden && !reducedMotion.matches) timer = setTimeout(() => show(1), panel.dataset.gallery === 'equipe' ? 4200 : 4800);
+      };
+      const show = async direction => {
+        if (changing) return;
+        changing = true;
+        const nextIndex = (index + direction + items.length) % items.length;
+        const next = 1 - active;
+        const shot = shots[next];
+        const item = items[nextIndex];
+        shot.alt = item.alt;
+        shot.src = item.src;
+        try { await shot.decode(); } catch (_) { /* Keep the visible photo if the next image fails. */ }
+        if (!shot.naturalWidth) { changing = false; schedule(); return; }
+        shots[active].classList.remove('is-active');
+        shots[active].setAttribute('aria-hidden', 'true');
+        shots[active].alt = '';
+        shot.removeAttribute('aria-hidden');
+        shot.classList.add('is-active');
+        if (title) title.textContent = item.title;
+        index = nextIndex; active = next; changing = false;
+        schedule();
+      };
+      panel.querySelectorAll('[data-direction]').forEach(button => button.addEventListener('click', () => show(Number(button.dataset.direction))));
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => { inView = entries[0].isIntersecting; schedule(); }, { threshold:.05 });
+        observer.observe(panel);
+      } else { inView = true; schedule(); }
+      document.addEventListener('visibilitychange', schedule);
+      reducedMotion.addEventListener('change', schedule);
+    });
+    document.querySelector('.video-trigger').addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/o-iS-7rv6uM?autoplay=1';
+      iframe.title = 'Apresentação institucional Natan Almeida Advocacia';
+      iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      document.getElementById('video-shell').replaceChildren(iframe);
+    });
+    document.getElementById('contact-form').addEventListener('submit', event => {
+      event.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const interest = document.getElementById('interest').value;
+      const message = document.getElementById('message').value.trim();
+      if (!name || !interest || !message) return;
+      const text = `Olá, meu nome é *${name}*.\n\n*Assunto:* ${interest}\n\n${message}`;
+      window.open(`https://wa.me/5533998572823?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
