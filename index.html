@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="head.jpg">
+  <link rel="preload" as="image" href="https://i.postimg.cc/d1BFsnqZ/head.jpg">
   <style>
     :root { --ink:#090a0c; --ink-soft:#17181b; --paper:#090a0c; --paper-deep:#17181b; --white:#fff; --body:#bfc0c3; --muted:#a9a9aa; --gold:#ad873b; --gold-light:#d4b566; --line:#37383b; --max:1180px; }
     *,*::before,*::after { box-sizing:border-box; }
@@ -35,9 +35,6 @@
     .button:hover { transform:translateY(-2px); }
     .button-gold { color:var(--ink); background:var(--gold-light); }
     .button-gold:hover { background:#e0c574; }
-    .hero .button-gold { font-size:1.05rem; padding:18px 36px; min-height:60px; animation:hero-pulse 2s infinite; }
-    .hero .button-gold:hover { animation:none; transform:translateY(-2px); }
-    @keyframes hero-pulse { 0%,100% { box-shadow:0 0 0 0 rgba(212,181,102,.6); filter:brightness(1); transform:scale(1); } 50% { box-shadow:0 0 0 12px rgba(212,181,102,0); filter:brightness(1.15); transform:scale(1.02); } }
     .text-link { display:inline-flex; align-items:center; gap:15px; padding-bottom:5px; border-bottom:1px solid var(--gold); text-decoration:none; font-weight:700; font-size:.88rem; }
     .text-link:hover { color:#9b7942; }
 
@@ -57,7 +54,7 @@
     .menu-toggle { display:none; width:44px; height:44px; align-items:center; justify-content:center; border:1px solid #ffffff45; background:transparent; color:white; font-size:1.45rem; line-height:1; }
 
     /* Hero: replace the portrait source with the final banner when ready. */
-    .hero { position:relative; overflow:hidden; color:var(--white); background:#090a0c url('head.jpg') center 43% / cover no-repeat; }
+    .hero { position:relative; overflow:hidden; color:var(--white); background:#090a0c url('https://i.postimg.cc/d1BFsnqZ/head.jpg') center 43% / cover no-repeat; }
     .hero::before { content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(90deg,rgba(9,10,12,.96) 0%,rgba(9,10,12,.84) 33%,rgba(9,10,12,.34) 65%,rgba(9,10,12,.04) 100%); }
     .hero-inner { min-height:555px; display:flex; align-items:center; padding-block:55px; }
     .hero-copy { position:relative; z-index:2; max-width:620px; animation:arrive .7s ease both; }
@@ -80,7 +77,7 @@
     .service-card h3 { font-size:1.24rem; margin-bottom:8px; }
     .service-card p { color:var(--body); font-size:.87rem; line-height:1.55; margin-bottom:0; }
 
-    .about { padding:72px 0; background:var(--ink-soft); }
+    .about { padding:72px 0; background:var(--ink); }
     .about-grid { display:grid; grid-template-columns:210px .8fr 1.2fr; gap:36px; align-items:center; }
     .about-portrait { margin:0; }
     .about-portrait img { width:210px; height:265px; object-fit:cover; object-position:center 18%; border:1px solid #b5995a76; }
@@ -91,7 +88,7 @@
     .credential { margin:0 0 20px; font-size:.76rem; font-weight:700; color:var(--gold-light); letter-spacing:.12em; }
     .about-body .text-link { margin-top:8px; }
 
-    .people-place { padding:76px 0 82px; color:var(--white); background:var(--ink); }
+    .people-place { padding:76px 0 82px; color:var(--white); background:var(--ink-soft); }
     .people-place-intro { display:flex; justify-content:space-between; align-items:end; gap:25px; margin-bottom:24px; }
     .people-place-intro h2 { margin-bottom:0; }
     .people-place-intro > p { max-width:380px; margin:0; color:#c5c5c5; font-size:.92rem; line-height:1.6; }
@@ -268,10 +265,6 @@
       </div>
     </section>
 
-    <section class="film" aria-labelledby="film-title">
-      <div class="wrap film-grid"><div><p class="eyebrow">Apresentação institucional</p><h2 id="film-title">Conheça o escritório em vídeo.</h2><p>Uma breve apresentação da nossa atuação e da equipe.</p></div><div class="video-shell" id="video-shell"><button class="video-trigger" type="button" aria-label="Reproduzir vídeo institucional no YouTube"><span class="play-icon" aria-hidden="true">▶</span><span class="video-label">Assistir à apresentação · YouTube</span></button></div></div>
-    </section>
-
     <section class="about" id="natan" aria-labelledby="about-title">
       <div class="wrap about-grid">
         <figure class="about-portrait"><img src="https://lh3.googleusercontent.com/p/AF1QipPACM1E0gdjPx76nKEB3g-ipkmLit9dOE4MXZFG=w900-h1200-n-k-no-nu" alt="Retrato do Dr. Natan Almeida" width="900" height="1200" loading="lazy" decoding="async"></figure>
@@ -297,6 +290,10 @@
           </figure>
         </div>
       </div>
+    </section>
+
+    <section class="film" aria-labelledby="film-title">
+      <div class="wrap film-grid"><div><p class="eyebrow">Apresentação institucional</p><h2 id="film-title">Conheça o escritório em vídeo.</h2><p>Uma breve apresentação da nossa atuação e da equipe.</p></div><div class="video-shell" id="video-shell"><button class="video-trigger" type="button" aria-label="Reproduzir vídeo institucional no YouTube"><span class="play-icon" aria-hidden="true">▶</span><span class="video-label">Assistir à apresentação · YouTube</span></button></div></div>
     </section>
 
     <section class="difference" aria-labelledby="difference-title">
